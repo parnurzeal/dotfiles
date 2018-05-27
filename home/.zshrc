@@ -5,6 +5,12 @@ export PATH="$PATH:$HOME/homebrew/bin"
 # Add Homeshick
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 
+# Add Antigen
+if [[ ! -f "$HOME/.antigen.zsh" ]]; then
+  curl -L git.io/antigen > "$HOME/.antigen.zsh"
+fi
+source "$HOME/.antigen.zsh"
+
 ##### GIT #####
 GIT_USERNAME="parnurzeal"
 GIT_EMAIL="parnurzeal@gmail.com"
@@ -14,9 +20,6 @@ if [[ -n "$AT_G" ]]; then
   GIT_EMAIL="twattanavekin@google.com"
 fi
 
-
-# Add Antigen
-source "$HOME/.homesick/repos/dotfiles/antigen/antigen.zsh"
 
 antigen use oh-my-zsh
 

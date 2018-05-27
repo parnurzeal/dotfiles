@@ -21,5 +21,12 @@ brew install tmux
 homeshick pull parnurzeal/dotfiles
 ```
 
+### Optional
+1. Install neovim
+```
+brew install neovim
+```
+
+
 ### Reference
 Zsh Framework - https://github.com/sorin-ionescu/prezto
