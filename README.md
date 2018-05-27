@@ -1,6 +1,10 @@
 # A Dotfiles
 
 ### Prerequisites
+0. Set Zsh as a default shell
+```
+chsh -s /usr/local/bin/zsh
+```
 1. Homeshick
 ```
 git clone git://github.com/andsens/homeshick.git $HOME/.homesick/repos/homeshick
