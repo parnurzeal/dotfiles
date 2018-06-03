@@ -9,8 +9,6 @@ case ${OSTYPE} in
     else
       A_OSX=true
     fi
-    # Stop using KQueue because it is broken in OSX Sierra https://github.com/tmux/tmux/issues/475
-    export EVENT_NOKQUEUE=1
     ;;
   linux*)
     echo "I am Linux"
