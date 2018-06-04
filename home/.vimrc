@@ -145,7 +145,7 @@ inoremap <C-l> <Esc>:tabnext<CR>
 nnoremap <silent> <Esc><Esc>[D :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
 nnoremap <silent> <Esc><Esc>[C :execute 'silent! tabmove ' . tabpagenr()<CR>
 " NERDTree
-nmap <F2> :NERDTreeTabsToggle<CR>
+nmap <C-\> :NERDTreeTabsToggle<CR>
 let NERDTreeHighlightCursorline=1
 let NERDTreeIgnore = ['tmp']
 

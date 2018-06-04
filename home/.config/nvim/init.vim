@@ -13,4 +13,4 @@ Plug 'jistr/vim-nerdtree-tabs'
 call plug#end()
 
 " NERDTree
-nmap <F2> :NERDTreeTabsToggle<CR>
+nmap <C-\> :NERDTreeTabsToggle<CR>
