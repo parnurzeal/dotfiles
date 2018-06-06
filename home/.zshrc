@@ -23,6 +23,7 @@ antigen use oh-my-zsh
 # My custom
 antigen bundle $HOME/.zsh-custom/00_presetting --no-local-clone
 antigen bundle $HOME/.zsh-custom/git --no-local-clone
+antigen bundle $HOME/.zsh-custom/google-cloud-sdk --no-local-clone
 # Non-custom
 antigen bundle lukechilds/zsh-nvm
 # Set a theme
