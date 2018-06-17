@@ -26,6 +26,7 @@ antigen bundle $HOME/.zsh-custom/git --no-local-clone
 antigen bundle $HOME/.zsh-custom/google-cloud-sdk --no-local-clone
 # Non-custom
 antigen bundle lukechilds/zsh-nvm
+antigen bundle rupa/z
 # Set a theme
 antigen theme intheloop
 antigen apply
