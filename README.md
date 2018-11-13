@@ -3,7 +3,7 @@
 ### Prerequisites
 0. Set Zsh as a default shell
 ```
-chsh -s /usr/local/bin/zsh
+chsh -s $(which zsh)
 ```
 1. Homeshick
 ```
