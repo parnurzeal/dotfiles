@@ -1,9 +1,11 @@
 # A Dotfiles
 
+## MacOSX
+
 ### Prerequisites
 0. Set Zsh as a default shell
 ```
-chsh -s /usr/local/bin/zsh
+chsh -s $(which zsh)
 ```
 1. Homeshick
 ```
@@ -22,7 +24,7 @@ brew install tmux
 ### Install
 1. Clone this dotfiles repo by homeshick
 ```
-homeshick pull parnurzeal/dotfiles
+homeshick clone parnurzeal/dotfiles
 ```
 
 ### Optional
