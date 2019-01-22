@@ -1,11 +1,12 @@
 # Set git global username
 GIT_USERNAME="parnurzeal"
 GIT_EMAIL="parnurzeal@gmail.com"
+# Deprecated - now use the same github account for both personal and work.
 # Check if at work (by checking AT_G env), set to work email.
-if [[ -n "$AT_G" ]]; then
-  GIT_USERNAME="twattanavekin"
-  GIT_EMAIL="twattanavekin@google.com"
-fi
+# if [[ -n "$AT_G" ]]; then
+#  GIT_USERNAME="twattanavekin"
+#  GIT_EMAIL="twattanavekin@google.com"
+# fi
 
 # Set my main git user
 echo "Set git email to ${GIT_EMAIL}"
