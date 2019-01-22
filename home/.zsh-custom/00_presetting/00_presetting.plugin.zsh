@@ -1,9 +1,11 @@
 # Set variable checker for cross-platform support
+MSG="I am "
 case ${OSTYPE} in
   darwin*)
-    echo "I am OSX"
+    MSG="${MSG} OSX"
     OS_OSX=true
     if [[ -f "$HOME/.at_g" ]]; then
+      MSG="${MSG} at G..."
       AT_G=true
       G_OSX=true
     else
@@ -11,9 +13,10 @@ case ${OSTYPE} in
     fi
     ;;
   linux*)
-    echo "I am Linux"
+    MSG="${MSG} Linux"
     OS_LINUX=true
     if [[ -f "$HOME/.at_g" ]]; then
+      MSG="${MSG} at G..."
       AT_G=true
       G_LINUX=true
     else
@@ -21,3 +24,5 @@ case ${OSTYPE} in
     fi
     ;;
 esac
+
+echo "${MSG}"
