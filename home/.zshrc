@@ -18,6 +18,25 @@ fi
 source "$HOME/.antigen.zsh"
 #################################################
 
+# Set variable checker for cross-platform support
+# Check OS
+case ${OSTYPE} in
+  darwin*)
+    DOT_OS="OSX"
+    ;;
+  linux*)
+    DOT_OS="LINUX"
+    ;;
+esac
+# Check place
+if [[ -f "$HOME/.at_g" ]]; then
+  DOT_PLACE="G"
+else
+  DOT_PLACE="H"
+fi
+echo "Using ${DOT_OS} at ${DOT_PLACE}"
+#################################################
+
 ##### Antigen #####
 antigen use oh-my-zsh
 # My custom
@@ -26,6 +45,10 @@ antigen bundle $HOME/.zsh-custom/zsh-history --no-local-clone
 antigen bundle $HOME/.zsh-custom/git --no-local-clone
 antigen bundle $HOME/.zsh-custom/google-cloud-sdk --no-local-clone
 antigen bundle $HOME/.zsh-custom/python --no-local-clone
+# Work custom
+if [[ "${DOT_PLACE}" == "G" ]]; then
+  antigen bundle $HOME/.zsh-work-custom/g4d --no-local-clone
+fi
 # Non-custom
 antigen bundle lukechilds/zsh-nvm
 antigen bundle rupa/z
