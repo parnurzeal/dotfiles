@@ -1,6 +1,7 @@
 # Set flutter bin path
-if [[ -n "$OS_OSX" ]]; then
-  PATH="$PATH:~/Applications/flutter/bin"
+if [[ "${DOT_OS}" == "OSX" ]]; then
+  echo "[flutter] Set flutter bin path in OSX."
+  export PATH=$PATH:~/Applications/flutter/bin
 fi
 
 # TODO: Check if not install flutter, then automatically install it.

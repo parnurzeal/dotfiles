@@ -1,6 +1,6 @@
 # Set python bin path
 if [[ -n "$OS_OSX" ]]; then
-  PATH="$PATH:/Users/twattanavekin/Library/Python/2.7/bin"
+  export PATH=$PATH:~/Library/Python/2.7/bin
 fi
 
 # Add virtualenv (refer: https://github.com/pyenv/pyenv-virtualenv)

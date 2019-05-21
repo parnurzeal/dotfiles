@@ -22,17 +22,17 @@ source "$HOME/.antigen.zsh"
 # Check OS
 case ${OSTYPE} in
   darwin*)
-    DOT_OS="OSX"
+    export DOT_OS="OSX"
     ;;
   linux*)
-    DOT_OS="LINUX"
+    export DOT_OS="LINUX"
     ;;
 esac
 # Check place
 if [[ -f "$HOME/.at_g" ]]; then
-  DOT_PLACE="G"
+  export DOT_PLACE="G"
 else
-  DOT_PLACE="H"
+  export DOT_PLACE="H"
 fi
 echo "Using ${DOT_OS} at ${DOT_PLACE}"
 #################################################
