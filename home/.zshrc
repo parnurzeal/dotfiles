@@ -42,6 +42,7 @@ antigen use oh-my-zsh
 # My custom
 antigen bundle $HOME/.zsh-custom/00_presetting --no-local-clone
 antigen bundle $HOME/.zsh-custom/zsh-history --no-local-clone
+antigen bundle $HOME/.zsh-custom/flutter --no-local-clone
 antigen bundle $HOME/.zsh-custom/git --no-local-clone
 antigen bundle $HOME/.zsh-custom/google-cloud-sdk --no-local-clone
 antigen bundle $HOME/.zsh-custom/python --no-local-clone
