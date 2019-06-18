@@ -46,6 +46,7 @@ antigen bundle $HOME/.zsh-custom/flutter --no-local-clone
 antigen bundle $HOME/.zsh-custom/git --no-local-clone
 antigen bundle $HOME/.zsh-custom/google-cloud-sdk --no-local-clone
 antigen bundle $HOME/.zsh-custom/python --no-local-clone
+antigen bundle $HOME/.zsh-custom/cpp --no-local-clone
 # Work custom
 if [[ "${DOT_PLACE}" == "G" ]]; then
   antigen bundle $HOME/.zsh-work-custom/g4d --no-local-clone
