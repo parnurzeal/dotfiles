@@ -52,6 +52,7 @@ if [[ "${DOT_PLACE}" == "G" ]]; then
   antigen bundle $HOME/.zsh-work-custom/g4d --no-local-clone
   antigen bundle $HOME/.zsh-work-custom/fileutil --no-local-clone
   antigen bundle $HOME/.zsh-work-custom/bagpipe --no-local-clone
+  antigen bundle $HOME/.zsh-work-custom/pastebin --no-local-clone
 fi
 # Non-custom
 antigen bundle lukechilds/zsh-nvm
