@@ -15,7 +15,15 @@ source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 if [[ ! -f "$HOME/.antigen.zsh" ]]; then
   curl -L git.io/antigen > "$HOME/.antigen.zsh"
 fi
-source "$HOME/.antigen.zsh"
+
+# Install antibody if not yet installed.
+antibody > /dev/null 2>&1 || \
+  { echo "Installing antibody; need your password to put antigen under /usr/local/bin" && \
+  curl -sfL git.io/antibody | sudo sh -s - -b /usr/local/bin }
+
+#source "$HOME/.antigen.zsh"
+# Initialize antibody
+source <(antibody init)
 #################################################
 
 # Set variable checker for cross-platform support
@@ -37,27 +45,32 @@ fi
 echo "Using ${DOT_OS} at ${DOT_PLACE}"
 #################################################
 
-##### Antigen #####
-antigen use oh-my-zsh
+####### Antibody #######
 # My custom
-antigen bundle $HOME/.zsh-custom/00_presetting --no-local-clone
-antigen bundle $HOME/.zsh-custom/zsh-history --no-local-clone
-antigen bundle $HOME/.zsh-custom/flutter --no-local-clone
-antigen bundle $HOME/.zsh-custom/git --no-local-clone
-antigen bundle $HOME/.zsh-custom/google-cloud-sdk --no-local-clone
-antigen bundle $HOME/.zsh-custom/python --no-local-clone
-antigen bundle $HOME/.zsh-custom/cpp --no-local-clone
+antibody bundle $HOME/.zsh-custom/00_presetting
+antibody bundle $HOME/.zsh-custom/zsh-history
+antibody bundle $HOME/.zsh-custom/flutter
+antibody bundle $HOME/.zsh-custom/git
+antibody bundle $HOME/.zsh-custom/google-cloud-sdk
+antibody bundle $HOME/.zsh-custom/python
+antibody bundle $HOME/.zsh-custom/cpp
 # Work custom
 if [[ "${DOT_PLACE}" == "G" ]]; then
-  antigen bundle $HOME/.zsh-work-custom/g4d --no-local-clone
-  antigen bundle $HOME/.zsh-work-custom/fileutil --no-local-clone
-  antigen bundle $HOME/.zsh-work-custom/bagpipe --no-local-clone
-  antigen bundle $HOME/.zsh-work-custom/pastebin --no-local-clone
+  antibody bundle $HOME/.zsh-work-custom/g4d
+  antibody bundle $HOME/.zsh-work-custom/fileutil
+  antibody bundle $HOME/.zsh-work-custom/bagpipe
+  antibody bundle $HOME/.zsh-work-custom/pastebin
 fi
 # Non-custom
-antigen bundle lukechilds/zsh-nvm
-antigen bundle rupa/z
+antibody bundle lukechilds/zsh-nvm
+antibody bundle rupa/z
 # Set a theme
-antigen theme intheloop
-antigen apply
+if [[ "${DOT_PLACE}" == "G" ]] && [[ "${DOT_OS}" == "OSX" ]]; then
+  echo "[Theme] Use spaceship theme"
+  antibody bundle denysdovhan/spaceship-prompt
+else
+  echo "[Theme] Use oh-my-zsh intheloop theme"
+  antibody bundle robbyrussell/oh-my-zsh path:lib
+  antibody bundle robbyrussell/oh-my-zsh path:themes/intheloop.zsh-theme
+fi
 ###################
