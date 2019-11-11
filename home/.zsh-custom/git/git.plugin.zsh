@@ -29,3 +29,14 @@ git config --global alias.cmam "commit --amend"
 git config --global alias.cmama "commit --amend -a"
 git config --global alias.w whatchanged
 git config --global alias.b branch
+
+# Install git extras
+if [[ "${DOT_OS}" == "OSX" ]]; then
+  if [[ ! -f $HOME/homebrew/bin/git-extras ]]; then
+    brew install git-extras
+  fi
+  if [[ -f $HOME/homebrew/bin/git-extras ]]; then
+    echo "[git] tj/git-extras - GIT utilities"
+  fi
+  # TODO: Add support for linux
+fi
