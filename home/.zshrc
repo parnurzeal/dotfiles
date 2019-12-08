@@ -1,3 +1,11 @@
+###################
+# The following lines were added by compinstall
+zstyle :compinstall filename '/Users/atw/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+#
 ##### Set PATH #####
 # Homebrew
 export PATH="$PATH:$HOME/homebrew/bin"
@@ -87,4 +95,3 @@ else
   antibody bundle robbyrussell/oh-my-zsh path:lib
   antibody bundle robbyrussell/oh-my-zsh path:themes/intheloop.zsh-theme
 fi
-###################
