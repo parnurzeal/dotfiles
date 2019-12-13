@@ -32,11 +32,14 @@ git config --global alias.b branch
 
 # Install git extras
 if [[ "${DOT_OS}" == "OSX" ]]; then
-  if [[ ! -f $HOME/homebrew/bin/git-extras ]]; then
-    brew install git-extras
-  fi
-  if [[ -f $HOME/homebrew/bin/git-extras ]]; then
-    echo "[git] tj/git-extras - GIT utilities"
+  GIT_EXTRA_NOT_EXIST="brew list git-extras > /dev/null 2>&1"
+  GIT_EXTRA_INSTALL_CMD="brew install git-extras"
+  # If not exist, install.
+  if [[ $(eval $GIT_EXTRAS_NOT_EXIST) ]]; then
+     echo "[git] installing git-extras - $GIT_EXTRAS_INSTALL_CMD"
+     eval $GIT_EXTRAS_INSTALL_CMD
+  else
+    echo "[git] tj/git-extras is ready!"
   fi
   # TODO: Add support for linux
 fi
