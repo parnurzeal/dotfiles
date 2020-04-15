@@ -79,6 +79,10 @@ if [[ "${DOT_PLACE}" == "G" ]]; then
   antibody bundle $HOME/.zsh-work-custom/fileutil
   antibody bundle $HOME/.zsh-work-custom/bagpipe
   antibody bundle $HOME/.zsh-work-custom/pastebin
+  antibody bundle $HOME/.zsh-work-custom/adb_screenrecord
+  antibody bundle $HOME/.zsh-work-custom/libvirt
+  antibody bundle $HOME/.zsh-work-custom/crow
+  antibody bundle $HOME/.zsh-work-custom/x20
 fi
 # Non-custom
 echo "--Public Plugins---"
