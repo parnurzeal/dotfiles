@@ -74,6 +74,7 @@ if [[ "${DOT_PLACE}" == "G" ]]; then
   antibody bundle $HOME/.zsh-work-custom/adb_screenrecord
   antibody bundle $HOME/.zsh-work-custom/libvirt
   antibody bundle $HOME/.zsh-work-custom/crow
+  antibody bundle $HOME/.zsh-work-custom/md_proxy
   antibody bundle $HOME/.zsh-work-custom/x20
   antibody bundle $HOME/.zsh-work-custom/adb_remote
 fi
@@ -105,8 +106,3 @@ fi
 # If not using powerlevel10k theme, you can remove the following line.
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-# Set MDProxy for G Remote Dev to gLinux
-if [[ "${DOT_PLACE}" == "G" ]] && [[ "${DOT_OS}" == "OSX" ]]; then
-  echo "[MDProxy] Set up MDProxy for G remote development"
-  [[ -e ~/mdproxy/mdproxy_zshrc ]] && source ~/mdproxy/mdproxy_zshrc # MDPROXY-ZSHRC
-fi
