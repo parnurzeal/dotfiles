@@ -37,7 +37,7 @@ Plugin 'rking/ag.vim'
 Plugin 'majutsushi/tagbar'
 Plugin 'ervandew/supertab'
 " Tmux + vim compatible
-"Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'christoomey/vim-tmux-navigator'
 " Markdown
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
@@ -45,7 +45,7 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'dhruvasagar/vim-table-mode'
 " Vim-Go Prerequisite
 " go get -u github.com/jstemmer/gotags
-Plugin 'fatih/vim-go'
+" Plugin 'fatih/vim-go'
 " Go Autocomplete
 " Plugin 'nsf/gocode', {'rtp': 'vim/'}
 " Jade syntax
