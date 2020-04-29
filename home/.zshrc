@@ -77,6 +77,7 @@ if [[ "${DOT_PLACE}" == "G" ]]; then
   antibody bundle $HOME/.zsh-work-custom/md_proxy
   antibody bundle $HOME/.zsh-work-custom/x20
   antibody bundle $HOME/.zsh-work-custom/adb_remote
+  antibody bundle $HOME/.zsh-work-custom/adb_mdproxy_connect
 fi
 # Non-custom
 echo "--Public Plugins---"
