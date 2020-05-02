@@ -20,3 +20,7 @@ call plug#end()
 
 " NERDTree
 nmap <C-\> :NERDTreeTabsToggle<CR>
+" Deoplete
+" Binds C-j and C-k to control up-down to select autocomplete
+inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
+inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
