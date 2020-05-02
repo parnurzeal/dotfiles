@@ -9,6 +9,12 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'scrooloose/nerdtree'
 " Better nerdtree in all tabs
 Plug 'jistr/vim-nerdtree-tabs'
+" Deoplete - Code completion framework
+" Need python3. If error, try `pip3 install --user pynvim`
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+let g:deoplete#enable_at_startup = 1
+"" Install javasript deoplete source.
+Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
 
 call plug#end()
 
