@@ -63,7 +63,6 @@ antibody bundle $HOME/.zsh-custom/git
 antibody bundle $HOME/.zsh-custom/google-cloud-sdk
 antibody bundle $HOME/.zsh-custom/python
 antibody bundle $HOME/.zsh-custom/cpp
-antibody bundle $HOME/.zsh-custom/myplayground
 antibody bundle $HOME/.zsh-custom/adb-setup
 # Work custom
 if [[ "${DOT_PLACE}" == "G" ]]; then
