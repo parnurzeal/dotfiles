@@ -58,6 +58,7 @@ echo "Using ${DOT_OS} at ${DOT_PLACE}"
 echo "---My Plugins---"
 antibody bundle $HOME/.zsh-custom/00_presetting
 antibody bundle $HOME/.zsh-custom/zsh-history
+antibody bundle $HOME/.zsh-custom/zsh-wordsplit
 antibody bundle $HOME/.zsh-custom/flutter
 antibody bundle $HOME/.zsh-custom/git
 antibody bundle $HOME/.zsh-custom/google-cloud-sdk
