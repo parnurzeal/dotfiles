@@ -69,6 +69,7 @@ antibody bundle $HOME/.zsh-custom/adb-setup
 if [[ "${DOT_PLACE}" == "G" ]]; then
   echo "---G Plugins---"
   antibody bundle $HOME/.zsh-work-custom/g4d
+  antibody bundle $HOME/.zsh-work-custom/hgd
   antibody bundle $HOME/.zsh-work-custom/fileutil
   antibody bundle $HOME/.zsh-work-custom/bagpipe
   antibody bundle $HOME/.zsh-work-custom/pastebin
