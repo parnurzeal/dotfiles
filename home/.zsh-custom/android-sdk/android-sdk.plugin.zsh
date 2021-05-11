@@ -1,8 +1,7 @@
-# Add virtualenv (refer: https://github.com/pyenv/pyenv-virtualenv)
-# TODO: Check if not install pyenv and pyenv-virtualenv, automatically install it.
+# Add Android SDK path and its bin.
 if [[ "${DOT_OS}" == "OSX" ]]; then
   export ANDROID_HOME=~/Library/Android/sdk/
-else if [[ "${DOT_OS}" == "LINUX" ]]; then
+elif [[ "${DOT_OS}" == "LINUX" ]]; then
   export ANDROID_HOME=~/Android/Sdk/
 fi
 # Set up instant app bin path
