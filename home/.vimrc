@@ -48,6 +48,8 @@ Plugin 'dhruvasagar/vim-table-mode'
 " Plugin 'nsf/gocode', {'rtp': 'vim/'}
 " Jade syntax
 Plugin 'digitaltoad/vim-jade'
+" Solidity syntax
+Plugin 'tomlion/vim-solidity'
 " All-in-one of all langauges (syntax,indent, ...)
 Plugin 'sheerun/vim-polyglot'
 call vundle#end()             " required
@@ -143,7 +145,7 @@ inoremap <C-l> <Esc>:tabnext<CR>
 nnoremap <silent> <Esc><Esc>[D :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
 nnoremap <silent> <Esc><Esc>[C :execute 'silent! tabmove ' . tabpagenr()<CR>
 " NERDTree
-nmap <C-\> :NERDTreeTabsToggle<CR>
+nmap <C-\>t :NERDTreeTabsToggle<CR>
 let NERDTreeHighlightCursorline=1
 let NERDTreeIgnore = ['tmp']
 
@@ -151,14 +153,14 @@ let NERDTreeIgnore = ['tmp']
 let g:vim_markdown_folding_disabled=1
 
 " CtrlP
-nnoremap <F4> :CtrlP<cr>
+nnoremap <C-\>c :CtrlP<cr>
 let g:ctrlp_working_path_mode = 2
 let g:ctrlp_by_filename = 1
 let g:ctrlp_max_files = 600
 let g:ctrlp_max_depth = 5
 
 " Tagbar
-nmap <F3> :TagbarToggle<CR>
+nmap <C-\>w :TagbarToggle<CR>
 " Because of old ctags conflict with ctags in brew
 " Need to set direct path to new ctags
 let g:tagbar_ctags_bin = '/usr/local/Cellar/ctags/5.8/bin/ctags'
