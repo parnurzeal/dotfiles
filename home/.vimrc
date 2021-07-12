@@ -163,7 +163,7 @@ let g:ctrlp_max_depth = 5
 nmap <C-\>w :TagbarToggle<CR>
 " Because of old ctags conflict with ctags in brew
 " Need to set direct path to new ctags
-let g:tagbar_ctags_bin = '/usr/local/Cellar/ctags/5.8/bin/ctags'
+let g:tagbar_ctags_bin = '/usr/local/Cellar/ctags/5.8_2/bin/ctags'
 " supertab based on context
 let g:SuperTabDefaultCompletionType = "context"
 

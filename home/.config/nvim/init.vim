@@ -1,3 +1,4 @@
+" Setting up vim-plug (github.com/junegunn/vim-plug)
 if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
   silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -6,26 +7,27 @@ endif
 
 call plug#begin('~/.local/share/nvim/plugged')
 
-" Nerdtree
-Plug 'scrooloose/nerdtree'
+"" NERDTree
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 "" Better nerdtree in all tabs
 Plug 'jistr/vim-nerdtree-tabs'
-" Deoplete - Code completion framework
-" Need python3. If error, try `pip3 install --user pynvim`
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-let g:deoplete#enable_at_startup = 1
-"" Install javasript deoplete source.
-Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
-" Airline - Powerful tabline (similar to powerline)
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-"" TODO: need more customize to the Airline theme.
+"" this is for auto complete, prettier and tslinting
+Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'} 
+"" Lightline - Powerful tabline (similar to powerline but lighter)
+Plug 'itchyny/lightline.vim'
 
 call plug#end()
 
-" NERDTree
+"" NERDTree settings.
 nmap <C-\> :NERDTreeTabsToggle<CR>
-" Deoplete
-" Binds C-j and C-k to control up-down to select autocomplete
-inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
-inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
+
+"" Lightline settings.
+" It is meant to be lightweight and no dependency on other plugin.
+" It provides a great way to configure and integrate with other plugin.
+" See: https://github.com/itchyny/lightline.vim
+" Or :h g:lightline
+let g:lightline = {'colorscheme': 'one'}
+
+"" Coc settings.
+" list of CoC extensions needed.
+let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier']  
