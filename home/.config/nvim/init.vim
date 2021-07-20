@@ -55,7 +55,7 @@ nnoremap <silent> <Esc><Esc>[C :execute 'silent! tabmove ' . tabpagenr()<CR>
 
 " === coc.nvim === "
 " list of CoC extensions needed.
-let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier']  
+let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-flutter']  
 "   <leader>dd    - Jump to definition of current symbol
 "   <leader>dr    - Jump to references of current symbol
 "   <leader>dj    - Jump to implementation of current symbol
