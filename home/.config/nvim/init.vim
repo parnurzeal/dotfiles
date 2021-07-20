@@ -3,6 +3,7 @@
 " Web Dev: https://www.freecodecamp.org/news/a-guide-to-modern-web-development-with-neo-vim-333f7efbf8e2/ 
 " Cool vim setup: https://github.com/ctaylo21/jarvis
 " Cool config example (from the same person): https://github.com/ctaylo21/jarvis/blob/master/config/nvim/init.vim#L58
+" More settings w/ tmux & zsh: https://www.freecodecamp.org/news/coding-like-a-hacker-in-the-terminal-79e22954968e/
 
 " ============================================================================ "
 " ===                           PLUGIN SETUP                               === "
