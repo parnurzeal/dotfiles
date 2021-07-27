@@ -112,6 +112,10 @@ endfunction
 " format on enter, <cr> could be remapped by other vim plugin
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+" Use `[e` and `]e` to navigate diagnostics
+" Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
+nmap <silent> [e <Plug>(coc-diagnostic-prev)
+nmap <silent> ]e <Plug>(coc-diagnostic-next)
 
 
 " ============================================================================ "
@@ -133,7 +137,14 @@ set shiftwidth=2            " Indentation amount for < and > commands.
 set autoindent              " indent a new line the same amount as the line just typed
 
 " === Navigation === "
+" switch between window buffer
 noremap <leader>w <C-^>
+
+" === Command mode shortcuts === "
+" alt-b to move one word left
+" alt-f to move one word right
+cnoremap <M-b> <S-Left>
+cnoremap <M-f> <S-Right>
 
 " ============================================================================ "
 " ===                                UI                                    === "
