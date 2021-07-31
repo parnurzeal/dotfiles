@@ -30,6 +30,7 @@ Plug 'itchyny/lightline.vim'
 "" Vim-devicons - adding icons
 Plug 'ryanoasis/vim-devicons'
 "" vim-startify - fancy start page
+" TODO: Make it even fancier.
 Plug 'mhinz/vim-startify'
 "" Dracula color scheme (Dark theme).
 Plug 'dracula/vim', { 'as': 'dracula' }
@@ -37,6 +38,9 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 " TODO: learn more about fzf#run and other commands.
 " https://github.com/junegunn/fzf/blob/master/README-VIM.md
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+"" Temporary Solidity syntax.
+" TODO: REmove after Coc can support solidity.
+Plug 'tomlion/vim-solidity'
 
 call plug#end()
 
