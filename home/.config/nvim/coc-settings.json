@@ -1,6 +1,7 @@
 {
   "suggest.echodocSupport": true,
   "suggest.maxCompleteItemCount": 20,
+  "prettier.singleQuote": true,
   "coc.preferences.formatOnSaveFiletypes": [
     "javascript",
     "typescript",

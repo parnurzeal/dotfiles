@@ -38,6 +38,7 @@ Plug 'dracula/vim', { 'as': 'dracula' }
 " TODO: learn more about fzf#run and other commands.
 " https://github.com/junegunn/fzf/blob/master/README-VIM.md
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 "" Temporary Solidity syntax.
 " TODO: REmove after Coc can support solidity.
 Plug 'tomlion/vim-solidity'
