@@ -3,6 +3,8 @@ if [[ "${DOT_OS}" == "OSX" ]]; then
   echo "[flutter] Set flutter bin path in OSX."
   export PATH="$PATH":"$HOME/Applications/flutter/bin"
   export PATH="$PATH":"$HOME/Applications/flutter/.pub-cache/bin"
+  # For dart
+  export PATH="$PATH":"$HOME/.pub-cache/bin"
 fi
 
 # TODO: Check if not install flutter, then automatically install it.
