@@ -9,6 +9,8 @@ compinit
 ##### Set PATH #####
 # Homebrew
 export PATH="$PATH:$HOME/homebrew/bin"
+# Homebrew for Macbook M1+
+eval "$(/opt/homebrew/bin/brew shellenv)"
 # My Bin
 export PATH="$PATH:$HOME/bin"
 ####################
@@ -20,16 +22,15 @@ if [[ ! -d "$HOME/.homesick/repos/homeshick" ]]; then
 fi
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 # Add Antigen
-if [[ ! -f "$HOME/.antigen.zsh" ]]; then
-  curl -L git.io/antigen > "$HOME/.antigen.zsh"
+if [[ ! $(brew list antigen) ]]; then
+  brew install antigen
 fi
 
 # Install antibody if not yet installed.
-antibody > /dev/null 2>&1 || \
-  { echo "Installing antibody; need your password to put antigen under /usr/local/bin" && \
-  curl -sfL git.io/antibody | sudo sh -s - -b /usr/local/bin }
+if [[ ! $(brew list antibody) ]]; then
+  brew install antibody
+fi
 
-#source "$HOME/.antigen.zsh"
 # Initialize antibody
 source <(antibody init)
 #################################################
