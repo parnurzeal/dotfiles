@@ -1,8 +1,8 @@
 # Set flutter bin path
 if [[ "${DOT_OS}" == "OSX" ]]; then
   echo "[flutter] Set flutter bin path in OSX."
-  export PATH="$PATH":"$HOME/Applications/flutter/bin"
-  export PATH="$PATH":"$HOME/Applications/flutter/.pub-cache/bin"
+  export PATH="$HOME/Applications/flutter/bin":"$PATH"
+  export PATH="$HOME/Applications/flutter/.pub-cache/bin":"$PATH"
   # For dart
   export PATH="$PATH":"$HOME/.pub-cache/bin"
 fi
