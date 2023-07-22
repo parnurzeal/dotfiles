@@ -97,8 +97,10 @@ antibody bundle zsh-users/zsh-syntax-highlighting
 echo "[alias] oh-my-zsh/plugins/common-aliases - common aliases"
 echo "See https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/common-aliases"
 antibody bundle robbyrussell/oh-my-zsh path:plugins/common-aliases
-echo "[git] oh-my-zsh/plugins/git - git aliases and useful functions"
-antibody bundle robbyrussell/oh-my-zsh path:plugins/git
+# Stop using git alias for now.
+# echo "[git] oh-my-zsh/plugins/git - git aliases and useful functions"
+# antibody bundle robbyrussell/oh-my-zsh path:plugins/git
+
 # Set a theme
 if [[ "${DOT_PLACE}" == "G" ]] && [[ "${DOT_OS}" == "OSX" ]]; then
   echo "[Theme] Use powerlevel10k theme"
