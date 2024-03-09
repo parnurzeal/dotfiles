@@ -10,7 +10,7 @@ compinit
 # Homebrew
 export PATH="$PATH:$HOME/homebrew/bin"
 # Homebrew for Macbook M1+
-eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(brew shellenv)"
 # My Bin
 export PATH="$PATH:$HOME/bin"
 ####################
