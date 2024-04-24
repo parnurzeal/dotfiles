@@ -31,7 +31,7 @@ export PATH="$PATH:$HOME/bin"
 
 # Homebrew
 if [[ "${DOT_OS}" == "OSX" ]]; then
-  export PATH="$PATH:$HOME/homebrew/bin"
+  export PATH="$PATH:/opt/homebrew/bin"
   # Homebrew for Macbook M1+
   eval "$(brew shellenv)"
 fi
