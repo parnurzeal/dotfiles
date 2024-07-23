@@ -5,6 +5,8 @@ if [[ "${DOT_OS}" == "OSX" ]]; then
   export PATH="$HOME/Applications/flutter/.pub-cache/bin":"$PATH"
   # For dart
   export PATH="$PATH":"$HOME/.pub-cache/bin"
+  # For iOS
+  export PATH="$PATH":"$HOME/.gem/bin"
 fi
 
 # TODO: Check if not install flutter, then automatically install it.
