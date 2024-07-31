@@ -60,6 +60,7 @@ antidote bundle $HOME/.zsh-custom/flutter
 antidote bundle $HOME/.zsh-custom/git
 antidote bundle $HOME/.zsh-custom/google-cloud-sdk
 antidote bundle $HOME/.zsh-custom/python
+antidote bundle $HOME/.zsh-custom/conda
 antidote bundle $HOME/.zsh-custom/cpp
 antidote bundle $HOME/.zsh-custom/android-sdk
 antidote bundle $HOME/.zsh-custom/adb-setup
