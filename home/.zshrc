@@ -81,6 +81,7 @@ if [[ "${DOT_PLACE}" == "G" ]]; then
   antidote bundle $HOME/.zsh-work-custom/adb_mdproxy_connect
   antidote bundle $HOME/.zsh-work-custom/dart
   antidote bundle $HOME/.zsh-work-custom/aqr
+  antidote bundle $HOME/.zsh-work-custom/gms
 fi
 # Non-custom
 echo "--Public Plugins---"
