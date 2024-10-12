@@ -64,6 +64,7 @@ antidote bundle $HOME/.zsh-custom/conda
 antidote bundle $HOME/.zsh-custom/cpp
 antidote bundle $HOME/.zsh-custom/android-sdk
 antidote bundle $HOME/.zsh-custom/adb-setup
+antidote bundle $HOME/.zsh-custom/go
 # Work custom
 if [[ "${DOT_PLACE}" == "G" ]]; then
   echo "---G Plugins---"
