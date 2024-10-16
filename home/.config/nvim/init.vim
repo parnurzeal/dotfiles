@@ -22,7 +22,7 @@ Plug 'scrooloose/nerdtree'
 "" Better nerdtree in all tabs
 Plug 'jistr/vim-nerdtree-tabs'
 "" this is for auto complete, prettier and tslinting
-Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'} 
+Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'npm ci'} 
 "" auto-pairs to auto close ( [ {
 Plug 'jiangmiao/auto-pairs' "this will auto close ( [ {
 "" Lightline - Powerful tabline (similar to powerline but lighter)
