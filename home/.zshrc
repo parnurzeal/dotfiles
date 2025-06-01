@@ -56,15 +56,17 @@ echo "---My Plugins---"
 antidote bundle $HOME/.zsh-custom/00_presetting
 antidote bundle $HOME/.zsh-custom/zsh-history
 antidote bundle $HOME/.zsh-custom/zsh-wordsplit
-antidote bundle $HOME/.zsh-custom/flutter
 antidote bundle $HOME/.zsh-custom/git
-antidote bundle $HOME/.zsh-custom/google-cloud-sdk
 antidote bundle $HOME/.zsh-custom/python
+antidote bundle $HOME/.zsh-custom/adb-setup
+antidote bundle $HOME/.zsh-custom/android-sdk
 antidote bundle $HOME/.zsh-custom/conda
 antidote bundle $HOME/.zsh-custom/cpp
-antidote bundle $HOME/.zsh-custom/android-sdk
-antidote bundle $HOME/.zsh-custom/adb-setup
+antidote bundle $HOME/.zsh-custom/flutter
 antidote bundle $HOME/.zsh-custom/go
+antidote bundle $HOME/.zsh-custom/google-cloud-sdk
+antidote bundle $HOME/.zsh-custom/node
+antidote bundle $HOME/.zsh-custom/ruby
 # Work custom
 if [[ "${DOT_PLACE}" == "G" ]]; then
   echo "---G Plugins---"
